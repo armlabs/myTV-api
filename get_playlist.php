@@ -5,7 +5,7 @@
     Copyright: HKLCF
     Last Modified: 18/08/2015
 */
-$video_id = htmlspecialchars($_GET['video_id']);
+$video_id = $_GET['video_id'];
 $mytv_video_api = "http://api.mytv.tvb.com/rest_search_api/data_video/format/json/id/{$video_id}";
 $result = json_decode(file_get_contents($mytv_video_api), true);
 
