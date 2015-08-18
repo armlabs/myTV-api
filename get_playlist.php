@@ -83,9 +83,9 @@ if(empty($result['content'][0]['urls']['3808000'])) {
 }
 
 if(empty($result)) {
-    echo 'expired!';
+    echo 'Playlist not found!';
 } else {
-    if(preg_match('/^[0-9]{2}/', $result)) {
+    if(preg_match('/^[0-9]{2}/', $result)) { // mytv
         preg_match('/[0-9]{12}/', $result, $path);
         $path = preg_replace('/^[0-9]{6}/', '', $path[0]);
         $path = preg_replace('/[0-9]{2}$/', '', $path);
@@ -93,13 +93,13 @@ if(empty($result)) {
         $result = preg_replace('/[\/]([0-9]{4})[\/]([0-9]{6})/', '/'.$path, $result);
         $result = str_replace('smil', 'mp4', $result);
         echo "http://streaming.tvb.com/vi/_definst_/{$result}/playlist.m3u8";
-    } else {
+    } else { //gotv
         $result = str_replace('smil', 'mp4', $result);
         $gotv_video_api = "http://token.tvb.com/stream/vod/rtmps/{$result}?feed";
         $result = json_decode(file_get_contents($gotv_video_api), true);
         $result = str_replace('rtmps', 'http', $result['url']);
         $result = str_replace('.mp4', '.mp4/playlist.m3u8', $result);
-        echo "{$result}";
+        echo $result;
     }
 }
 ?>
