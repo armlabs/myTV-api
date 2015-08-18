@@ -3,37 +3,7 @@
     Version: 1.1
     Author: HKLCF
     Copyright: HKLCF
-    Last Modified: 27/07/2015
-*/
-/*
---------------------------------------------------------------------------------
-MyTV API:
-http://api.mytv.tvb.com/rest_search_api/data_video/format/json/id/{video_id}
-http://api.mytv.tvb.com/rest_user_subscription_api/video_path/format/json?id={video_id}
---------------------------------------------------------------------------------
-Video Link:
-aa/xxxx/xxxxx/xxxxxxbbbbcc.smil (Sample)
-http://streaming.tvb.com/vi/_definst_/{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4/playlist.m3u8
---------------------------------------------------------------------------------
-Token:
-http://token.tvb.com/stream/vod/http//{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4?feed
---------------------------------------------------------------------------------
-MP4 Direct Link:
-http://token.tvb.com/stream/vod/http//{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4
---------------------------------------------------------------------------------
-Other:
-http://api.tvb.com/mytv/player_feed.php?video_id={video_id}
-http://data.tvb.com/pdes/video_file/xxxxxx{bbbb}{cc}.json
-http://vi.tvb.com/video/{aa}/export/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4
-http://rss.tvb.com/getFeed/drama
---------------------------------------------------------------------------------
-GOTV:
-http://api.mytv.tvb.com/rest_search_api/data_video/format/json/id/{video_id}
-aaa/xxxx/xxxxx/xxxxxxbbbbcc.smil (Sample)
-http://token.tvb.com/stream/vod/rtmps/{aaa}/{xxxx}/{xxxxx}/{xxxxxxbbbbcc}.mp4?feed
-rtmps://wowza.stream.tvb.com/vipo/_definst_/mp4:vipo/{aaa}/{xxxx}/{xxxxx}/{xxxxxxbbbbcc}.mp4?ts={ts}&sig={sig}
-http://wowza.stream.tvb.com/vipo/_definst_/mp4:vipo/{aaa}/{xxxx}/{xxxxx}/{xxxxxxbbbbcc}.mp4/playlist.m3u8?ts={ts}&sig={sig}
---------------------------------------------------------------------------------
+    Last Modified: 18/08/2015
 */
 $video_id = htmlspecialchars($_GET['video_id']);
 $mytv_video_api = "http://api.mytv.tvb.com/rest_search_api/data_video/format/json/id/{$video_id}";
