@@ -94,12 +94,6 @@ if(empty($result)) {
         $result = str_replace('smil', 'mp4', $result);
         echo "http://streaming.tvb.com/vi/_definst_/{$result}/playlist.m3u8";
     } else {
-/*
-aaa/xxxx/xxxxx/xxxxxxbbbbcc.smil (Sample)
-http://token.tvb.com/stream/vod/rtmps/{aaa}/{xxxx}/{xxxxx}/{xxxxxxbbbbcc}.mp4?feed
-rtmps://wowza.stream.tvb.com/vipo/_definst_/mp4:vipo/{aaa}/{xxxx}/{xxxxx}/{xxxxxxbbbbcc}.mp4?ts={ts}&sig={sig}
-http://wowza.stream.tvb.com/vipo/_definst_/mp4:vipo/{aaa}/{xxxx}/{xxxxx}/{xxxxxxbbbbcc}.mp4/playlist.m3u8?ts={ts}&sig={sig}
-*/
         $result = str_replace('smil', 'mp4', $result);
         $gotv_video_api = "http://token.tvb.com/stream/vod/rtmps/{$result}?feed";
         $result = json_decode(file_get_contents($gotv_video_api), true);
