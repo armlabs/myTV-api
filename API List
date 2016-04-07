@@ -3,7 +3,7 @@ MyTV API:
 http://api.mytv.tvb.com/rest_search_api/data_video/format/json/id/{video_id}
 http://api.mytv.tvb.com/rest_user_subscription_api/video_path/format/json?id={video_id}
 --------------------------------------------------------------------------------
-Video Link:
+Video Link: <it doesn't seem to work>
 aa/xxxx/xxxxx/xxxxxxbbbbcc.smil (Sample)
 http://streaming.tvb.com/vi/_definst_/{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4/playlist.m3u8
 --------------------------------------------------------------------------------
