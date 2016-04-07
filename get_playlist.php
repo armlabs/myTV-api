@@ -1,55 +1,55 @@
 <?php
 /*
-    Version: 1.1
+    Version: 1.2
     Author: HKLCF
     Copyright: HKLCF
-    Last Modified: 18/08/2015
+    Last Modified: 07/04/2016
 */
 $video_id = $_GET['video_id'];
 $mytv_video_api = "http://api.mytv.tvb.com/rest_search_api/data_video/format/json/id/{$video_id}";
 $result = json_decode(file_get_contents($mytv_video_api), true);
 
-// $result['content'][0]['urls']['3808000']; //video_bitrate:3808000 1080p
+// $result['content'][0]['urls']['3872001']; //video_bitrate:3872001 1080p
+// $result['content'][0]['urls']['3872000']; //video_bitrate:3872000 1080p
 // $result['content'][0]['urls']['2404000']; //video_bitrate:2404000 720p
 // $result['content'][0]['urls']['1404000']; //video_bitrate:1404000 720p
-// $result['content'][0]['urls']['904000']; //video_bitrate:904000 720p
+// $result['content'][0]['urls']['1404001']; //video_bitrate:1404001 576p
+// $result['content'][0]['urls']['904000']; //video_bitrate:904000 576p
 // $result['content'][0]['urls']['752000']; //video_bitrate:752000 480p
-// $result['content'][0]['urls']['452000']; //video_bitrate:452000 360p
 // $result['content'][0]['urls']['352000']; //video_bitrate:352000 270p
-// $result['content'][0]['urls']['176000']; //video_bitrate:176000 240p
-// $result['content'][0]['urls']['76000']; //video_bitrate:76000 180p
-if(empty($result['content'][0]['urls']['3808000'])) {
-    if(empty($result['content'][0]['urls']['2404000'])) {
-        if(empty($result['content'][0]['urls']['1404000'])) {
-            if(empty($result['content'][0]['urls']['904000'])) {
-                if(empty($result['content'][0]['urls']['752000'])) {
-                    if(empty($result['content'][0]['urls']['452000'])) {
-                        if(empty($result['content'][0]['urls']['352000'])) {
-                            if(empty($result['content'][0]['urls']['176000'])) {
-                                $result = $result['content'][0]['urls']['76000'];
+// $result['content'][0]['urls']['152000']; //video_bitrate:152000 270p
+if(empty($result['content'][0]['urls']['3872001'])) {
+    if(empty($result['content'][0]['urls']['3872000'])) {
+        if(empty($result['content'][0]['urls']['2404000'])) {
+            if(empty($result['content'][0]['urls']['1404000'])) {
+                if(empty($result['content'][0]['urls']['1404001'])) {
+                    if(empty($result['content'][0]['urls']['904000'])) {
+                        if(empty($result['content'][0]['urls']['752000'])) {
+                            if(empty($result['content'][0]['urls']['352000'])) {
+                                $result = $result['content'][0]['urls']['152000'];
                             } else {
-                                $result = $result['content'][0]['urls']['176000'];
+                                $result = $result['content'][0]['urls']['352000'];
                             }
                         } else {
-                            $result = $result['content'][0]['urls']['352000'];
+                            $result = $result['content'][0]['urls']['752000'];
                         }
                     } else {
-                        $result = $result['content'][0]['urls']['452000'];
+                        $result = $result['content'][0]['urls']['904000'];
                     }
                 } else {
-                    $result = $result['content'][0]['urls']['752000'];
+                    $result = $result['content'][0]['urls']['1404001'];
                 }
             } else {
-                $result = $result['content'][0]['urls']['904000'];
+                $result = $result['content'][0]['urls']['1404000'];
             }
         } else {
-            $result = $result['content'][0]['urls']['1404000'];
+            $result = $result['content'][0]['urls']['2404000'];
         }
     } else {
-        $result = $result['content'][0]['urls']['2404000'];
+        $result = $result['content'][0]['urls']['3872000'];
     }
 } else {
-    $result = $result['content'][0]['urls']['3808000'];
+    $result = $result['content'][0]['urls']['3872001'];
 }
 
 if(empty($result)) {
