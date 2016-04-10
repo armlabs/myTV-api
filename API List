@@ -26,3 +26,4 @@ http://token.tvb.com/stream/vod/rtmps/{aaa}/{xxxx}/{xxxxx}/{xxxxxxbbbbcc}.mp4?fe
 rtmps://wowza.stream.tvb.com/vipo/_definst_/mp4:vipo/{aaa}/{xxxx}/{xxxxx}/{xxxxxxbbbbcc}.mp4?ts={ts}&sig={sig}
 http://wowza.stream.tvb.com/vipo/_definst_/mp4:vipo/{aaa}/{xxxx}/{xxxxx}/{xxxxxxbbbbcc}.mp4/playlist.m3u8?ts={ts}&sig={sig}
 --------------------------------------------------------------------------------
+http://api.mytv.tvb.com/rest_programme_api/programme/format/json?id={id}
