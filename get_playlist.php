@@ -65,7 +65,7 @@ if(empty($result)) {
         echo "http://streaming.tvb.com/vi/_definst_/{$result}/playlist.m3u8";
     } else { //gotv
         $result = str_replace('smil', 'mp4', $result);
-        $gotv_video_api = "http://token.tvb.com/stream/vod/rtmps/{$result}?feed";
+        $gotv_video_api = "http://token.tvb.com/stream/vod/rtmps/tvbcom/{$result}?feed";
         $result = json_decode(file_get_contents($gotv_video_api), true);
         $result = str_replace('rtmps', 'http', $result['url']);
         $result = str_replace('.mp4', '.mp4/playlist.m3u8', $result);
