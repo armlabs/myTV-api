@@ -9,6 +9,7 @@ http://streaming.tvb.com/vi/_definst_/{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4/playlis
 --------------------------------------------------------------------------------
 Token:
 http://token.tvb.com/stream/vod/http/tvbcom/{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4?feed
+http://token.tvb.com/stream/vod/hls/tvbcom/{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4?feed
 --------------------------------------------------------------------------------
 MP4 Direct Link:
 http://token.tvb.com/stream/vod/http/tvbcom/{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4
