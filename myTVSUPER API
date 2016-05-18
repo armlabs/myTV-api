@@ -1,0 +1,11 @@
+http://api.mytvsuper.com/rest_webmpm_api/webmpm/format/json?platform=android&category=home
+http://api.mytvsuper.com/rest_listing_api/epg/code/all/from/2016-05-18/format/json
+http://uapi.mytvsuper.com/rest_app_user_subscription_api/check_country_allow/format/json?platform=android
+http://uapi.mytvsuper.com/rest_app_user_subscription_api/video_checkout/type/channel/id/J/device_type/WEB_ANDROID/app/mytv5/time/1463565209219/format/json?register_id=QS2RkgKsjLzCIpBUKIuRGlc2D27Kv8QoY8ez6IoY9AM%3D
+
+
+http://rr5-6.edgeware-rr-live.edgeware.tvb.com/__cl/default/__c/ott_J_h264/__op/mps/__f/index.m3u8?sig=a33080c2a5ded88a6082edcbb77d819b&ext_start_limit=1463572410&int_start_limit=1463572410&ts=1463651610&p=4092
+** return
+http://14.136.141.200/session/4b7752e2-1ce0-11e6-9497-005056b16cc2/h92ssr/__cl/default/__c/ott_J_h264/__op/mps/__f/index.m3u8?token=022736c71d9fdcfc1cc14351035ef09e_1463651610_1463572410&p=4092
+** change "mps" to "clear"
+http://14.136.141.200/session/4b7752e2-1ce0-11e6-9497-005056b16cc2/h92ssr/__cl/default/__c/ott_J_h264/__op/clear/__f/index.m3u8?token=022736c71d9fdcfc1cc14351035ef09e_1463651610_1463572410&p=4092
