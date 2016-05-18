@@ -14,6 +14,7 @@ http://token.tvb.com/stream/vod/hls/tvbcom/{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4?fe
 --------------------------------------------------------------------------------
 MP4 Direct Link:
 http://token.tvb.com/stream/vod/http/tvbcom/{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4
+http://token.tvb.com/stream/vod/hls/tvbcom/{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4
 --------------------------------------------------------------------------------
 Other:
 http://api.tvb.com/mytv/player_feed.php?video_id={video_id}
