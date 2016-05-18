@@ -13,6 +13,7 @@ http://token.tvb.com/stream/vod/http/tvbcom/{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4?f
 http://token.tvb.com/stream/vod/hls/tvbcom/{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4?feed
 --------------------------------------------------------------------------------
 MP4 Direct Link:
+http://token.tvb.com/stream/vod/https//{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4
 http://token.tvb.com/stream/vod/http/tvbcom/{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4
 http://token.tvb.com/stream/vod/hls/tvbcom/{aa}/{bbbb+1}/xxxxxx{bbbb}{cc}.mp4
 --------------------------------------------------------------------------------
